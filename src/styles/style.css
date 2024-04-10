@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --clr-blue: rgb(11, 153, 255);
+    --clr-li-blue: rgb(188, 227, 255);
+    --clr-black: rgb(0, 0, 0);
+    --clr-grey: rgb(125, 125, 125);
+}
+
+.my-container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/*HEADER CONTENT*/
+#header-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+#header-navbar-content{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.header-navbar-link{
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--clr-black);
+    transition: color 0.2s;
+}
+
+.header-navbar-link:hover{
+    color: var(--clr-grey);
+}
+
+
+/*MAIN CONTENT*/
+.subheading{
+    padding: 10px;
+    border-bottom: 2px solid var(--clr-black);
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.followers-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.important{
+    color: var(--clr-blue);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/*TODO*/
+#name{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#followers{
+    color: var(--clr-black);
+    font-size: 16px;
+}
+
+#perfil-picture{
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--clr-blue);
+}
+
+#perfil{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    padding: 15px;
+}
+
+#perfil-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#icons{
+    display: flex;
+    gap: 15px;   
+}
+
+
+
+/*MEDIA QUERIES*/
