@@ -13,6 +13,7 @@
     --clr-li-blue: rgb(188, 227, 255);
     --clr-black: rgb(0, 0, 0);
     --clr-grey: rgb(125, 125, 125);
+    --clr-awhite: rgb(237, 239, 242);
 }
 
 .my-container{
@@ -50,6 +51,7 @@
 
 
 /*MAIN CONTENT*/
+    /*PERFIL*/
 .subheading{
     padding: 10px;
     border-bottom: 2px solid var(--clr-black);
@@ -71,7 +73,6 @@
     font-weight: 600;
 }
 
-/*TODO*/
 #name{
     display: flex;
     align-items: center;
@@ -107,6 +108,19 @@
     gap: 15px;   
 }
 
+    /*REPOSITORIES*/
+#repositories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
 
+.card{
+    background-color: var(--clr-awhite);
+}
 
-/*MEDIA QUERIES*/
+.card-icons > span{
+    display: inline-block;
+    margin-right: 20px;
+}
