@@ -124,3 +124,19 @@
     display: inline-block;
     margin-right: 20px;
 }
+
+    /*HIGHLIGHT*/
+#highlight{
+    padding: 15px;
+}
+
+#autoplaying-carousel{
+    background-color: var(--clr-li-blue);
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1200px;
+}
+
+#autoplaying-carousel img{
+    max-height: 500px;
+}
