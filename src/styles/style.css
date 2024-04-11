@@ -16,12 +16,6 @@
     --clr-awhite: rgb(237, 239, 242);
 }
 
-.my-container{
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-
 /*HEADER CONTENT*/
 #header-navbar{
     display: flex;
@@ -35,7 +29,6 @@
 #header-navbar-content{
     display: flex;
     flex-direction: row;
-    gap: 50px;
 }
 
 .header-navbar-link{
@@ -93,6 +86,7 @@
 #perfil{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 25px;
 
     padding: 15px;
@@ -143,14 +137,14 @@
 
     /*TEAM*/
 .team-img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 200px;
 }
 
 #team{
     display: grid;
-    grid-template-columns: repeat(5, 300px);
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
     gap: 30px;
     
     padding: 15px;
@@ -158,4 +152,104 @@
 
 .partner-name{
     text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+
+.my-container{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 425px) {
+    .my-container{
+        max-width: 425px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .my-container{
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .my-container{
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .my-container{
+        max-width: 1440px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .my-container{
+        max-width: 2560px;
+    }
+}
+
+/*JNDKSXCBFLJIKHSDXBLIJF*/
+
+@media screen and (max-width: 2560px) {
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    #repositories{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #autoplaying-carousel{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header-navbar{
+        flex-direction: column;
+    }
+
+    #header-navbar-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .header-navbar-link{
+        font-size: 18px;
+    }
+
+    #perfil{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #perfil-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #repositories{
+        grid-template-columns: 1fr;
+    }
+
+    #team{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
 }
