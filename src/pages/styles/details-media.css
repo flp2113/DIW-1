@@ -1,0 +1,11 @@
+@media screen and (max-width: 375px) {
+    .topic{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .topic{
+        font-size: 12px;
+    }
+}
