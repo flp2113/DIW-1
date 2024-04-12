@@ -1,0 +1,17 @@
+h3 > span{
+    margin: 0px 20px 0px 15px;
+}
+
+h3 > span > svg{
+    width: 30px;
+    height: 30px;
+}
+
+.topic{
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    font-weight: 500;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 15px;
+}

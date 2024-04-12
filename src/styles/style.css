@@ -13,7 +13,14 @@
     --clr-li-blue: rgb(188, 227, 255);
     --clr-black: rgb(0, 0, 0);
     --clr-grey: rgb(125, 125, 125);
+    --clr-white: rgb(255, 255, 255);
     --clr-awhite: rgb(237, 239, 242);
+}
+
+.my-container{
+    width: 100%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
 }
 
 /*HEADER CONTENT*/
@@ -159,95 +166,3 @@
 .partner-name{
     text-align: center;
 }
-
-
-/*MEDIA QUERIES*/
-
-.my-container{
-    width: 100%;
-    margin: 0 auto;
-    /*border: 1px solid red;*/
-}
-
-@media screen and (min-width: 425px) {
-    .my-container{
-        max-width: 425px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .my-container{
-        max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .my-container{
-        max-width: 1024px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .my-container{
-        max-width: 1440px;
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    .my-container{
-        max-width: 2560px;
-    }
-}
-
-/*JNDKSXCBFLJIKHSDXBLIJF*/
-
-@media screen and (max-width: 2560px) {}
-
-@media screen and (max-width: 1440px) {}
-
-@media screen and (max-width: 1024px) {
-    #repositories{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #autoplaying-carousel{
-        padding: 5px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #header-navbar{
-        flex-direction: column;
-    }
-
-    #header-navbar-content{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 0;
-    }
-
-    .header-navbar-link{
-        font-size: 18px;
-    }
-
-    #perfil{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #perfil-content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #repositories{
-        grid-template-columns: 1fr;
-    }
-
-    #team{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 425px) {}
