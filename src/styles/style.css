@@ -124,11 +124,22 @@
 
 .card{
     background-color: var(--clr-awhite);
+    transition: all 0.2s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    border: 1px solid var(--clr-blue);
 }
 
 .card-icons > span{
     display: inline-block;
     margin-right: 20px;
+}
+
+.clickable-card{
+    text-decoration: none;
+    color: var(--clr-black);
 }
 
     /*HIGHLIGHT*/
@@ -156,9 +167,8 @@
 
 #team{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
-    gap: 30px;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-evenly;
     
     padding: 15px;
 }
